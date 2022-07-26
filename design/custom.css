@@ -40,5 +40,21 @@ header ul {
 #profile {
     width: 100%;
     height: calc((100vh));
+    background-color: #fafafa;
     min-height: 400px;
+}
+
+#profile h1 {
+    margin: 0;
+}
+
+#skills {
+    width: 100%;
+    height: calc((100vh));
+    background-color: lightcyan;
+    min-height: 400px;
+}
+
+#skills h1 {
+    margin: 0;
 }
