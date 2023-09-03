@@ -5,7 +5,12 @@ export default function Profile() {
         <span className="text-6xl">PROFILE</span>
       </div>
       <div className="flex justify-center">
-        <div className="w-2/3 bg-white rounded-lg" style={{"aspectRatio": 1.618 / 1}}>テスト</div>
+        <div className="w-2/3 bg-white rounded-lg" style={{"aspectRatio": 1.618 / 1}}>
+          <div className="flex">
+            <div>ここにGitHubのアイコン</div>
+            <div>ここに自己紹介の文章</div>
+          </div>
+        </div>
       </div>
     </div>
   )
