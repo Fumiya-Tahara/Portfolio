@@ -1,6 +1,8 @@
 import { SkillCard } from "./components/skill_card";
 
 export default function Skill() {
+  const path: string = "/icon/gopher.svg";
+
   return (
     <div className="bg-gray-100 py-24">
       <div className="flex justify-center mb-10">
@@ -8,11 +10,28 @@ export default function Skill() {
       </div>
       <div className="flex justify-center">
         <div className="w-2/3 grid grid-cols-3 gap-10 px-10">
-          <SkillCard />
-          <SkillCard />
-          <SkillCard />
-          <SkillCard />
-          <SkillCard />
+          <SkillCard 
+            path="/icon/go.svg" 
+            name="Go" 
+            width={200} 
+            height={100} 
+            description="現在アルバイトで使っている。"
+          />
+          <SkillCard 
+            path="/icon/javascript.svg" 
+            name="JavaScript" width={100} 
+            height={100} 
+            description="フロントでは主にこれを使ってきた。"
+          />
+          <SkillCard 
+            path="/icon/python.svg" 
+            name="Python" 
+            width={100} 
+            height={100} 
+            description="最初に触った言語。思い入れがある。"
+          />
+          {/* <SkillCard />
+          <SkillCard /> */}
         </div>
       </div>
     </div>
