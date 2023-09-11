@@ -14,12 +14,13 @@ export default function Skill() {
             path="/icon/go.svg" 
             name="Go" 
             width={200} 
-            height={100} 
+            height={122} 
             description="現在アルバイトで使っている。"
           />
           <SkillCard 
             path="/icon/javascript.svg" 
-            name="JavaScript" width={100} 
+            name="JavaScript" 
+            width={100} 
             height={100} 
             description="フロントでは主にこれを使ってきた。"
           />
@@ -30,8 +31,20 @@ export default function Skill() {
             height={100} 
             description="最初に触った言語。思い入れがある。"
           />
-          {/* <SkillCard />
-          <SkillCard /> */}
+          <SkillCard
+            path="/icon/typescript-icon.svg"
+            name="TypeScript"
+            width={100}
+            height={100}
+            description="最近フロントで使っている。このポートフォリオにもTypeScriptを用いた。"
+          />
+          <SkillCard 
+            path="/icon/laravel.svg"
+            name="Laravel"
+            width={100}
+            height={100}
+            description="初めての開発系アルバイトで使ったWebフレームワーク。素のPHPはあまり使えない。"
+          />
         </div>
       </div>
     </div>

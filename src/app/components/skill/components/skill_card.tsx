@@ -11,9 +11,9 @@ interface SkillCardProps {
 export function SkillCard({path, name, width, height, description}: SkillCardProps) {
   return (
     <div className="bg-white rounded-lg" style={{"aspectRatio": 1 / 1.618}}>
-      <div className="flex justify-center">
-        <div className="flex flex-col mt-10">
-          <div className="flex flex-col items-center mb-16" style={{height: 100}}>
+      <div className="h-full">
+        <div className="h-full">
+          <div className="h-2/3 flex flex-col justify-center items-center">
             <Image src={path} alt={name} width={width} height={height}/>
             <div className="font-bold text-xl mt-2">{name}</div>
           </div>
