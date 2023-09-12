@@ -1,5 +1,7 @@
 dt::after {
     content: '●';
     font-size: 22px;
-    color: green;
+    color: #1d4ed8;
+    position: relative;
+    left: 9px;
 }
