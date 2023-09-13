@@ -15,7 +15,7 @@ export default function Skill() {
             name="Go" 
             width={200} 
             height={122} 
-            description="現在アルバイトで使っている。"
+            description="現在アルバイトで使っている。ポインタが難しい..."
           />
           <SkillCard 
             path="/icon/javascript.svg" 
