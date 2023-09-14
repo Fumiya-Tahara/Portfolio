@@ -1,8 +1,17 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { pageVariants } from "@/app/features/animation_config";
 
 export default function Profile() {
   return (
     <div className="bg-gray-300 py-24">
+      <motion.div
+        initial="offscreen"
+        whileInView="onscreen"
+        viewport={{ once: true }}
+        variants={pageVariants}
+      >
       <div className="flex justify-center mb-10">
         <span className="text-6xl">PROFILE</span>
       </div>
@@ -20,6 +29,7 @@ export default function Profile() {
           </div>
         </div>
       </div>
+      </ motion.div>
     </div>
   )
 }
