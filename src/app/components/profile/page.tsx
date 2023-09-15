@@ -5,7 +5,7 @@ import { pageVariants } from "@/app/features/animation_config";
 
 export default function Profile() {
   return (
-    <div className="bg-gray-300 py-24">
+    <div className="bg-gray-300 py-24 min-h-screen">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"

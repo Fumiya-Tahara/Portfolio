@@ -7,7 +7,7 @@ export default function Skill() {
   const path: string = "/icon/gopher.svg";
 
   return (
-    <div className="bg-gray-100 py-24">
+    <div className="bg-gray-100 py-24 min-h-screen">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
