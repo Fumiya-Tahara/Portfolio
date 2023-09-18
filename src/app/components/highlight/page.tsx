@@ -6,15 +6,15 @@ import { pageVariants } from "@/app/features/animation_config";
 
 export default function Highlight() {
   return (
-    <div className="bg-gray-300 py-24 min-h-screen">
+    <div className="bg-gray-300 py-12 lg:py-24 min-h-screen">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true }}
         variants={pageVariants}
       >
-        <div className="flex justify-center mb-10">
-          <span className="text-6xl">HIGHLIGHT</span>
+        <div className="flex justify-center mb-4 lg:mb-10">
+          <span className="text-4xl lg:text-6xl">HIGHLIGHT</span>
         </div>
         <div className="flex justify-center">
           <div className="w-2/3 bg-white rounded-lg flex justify-center py-10">

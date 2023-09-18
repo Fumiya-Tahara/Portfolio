@@ -10,7 +10,7 @@ interface SkillCardProps {
 
 export function SkillCard({path, name, width, height, description}: SkillCardProps) {
   return (
-    <div className="bg-white rounded-lg" style={{"aspectRatio": 1 / 1.618}}>
+    <div className="bg-white rounded-lg px-4 lg:px-0" style={{"aspectRatio": 1 / 1.618}}>
       <div className="h-full">
         <div className="h-full">
           <div className="h-2/3 flex flex-col justify-center items-center">

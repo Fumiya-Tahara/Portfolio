@@ -7,18 +7,18 @@ export default function Skill() {
   const path: string = "/icon/gopher.svg";
 
   return (
-    <div className="bg-gray-100 py-24 min-h-screen">
+    <div className="bg-gray-100 py-12 lg:py-24 min-h-screen">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
         viewport={{ once: true }}
         variants={pageVariants}
       >
-        <div className="flex justify-center mb-10">
-          <span className="text-6xl">SKILLS</span>
+        <div className="flex justify-center mb-4 lg:mb-10">
+          <span className="text-4xl lg:text-6xl">SKILLS</span>
         </div>
         <div className="flex justify-center">
-          <div className="w-2/3 grid grid-cols-3 gap-10 px-10">
+          <div className="w-2/3 grid grid-cols-1 lg:grid-cols-3 gap-10 lg:px-10">
             <SkillCard 
               path="/icon/go.svg" 
               name="Go" 
