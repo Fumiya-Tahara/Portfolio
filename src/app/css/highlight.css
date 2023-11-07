@@ -1,7 +1,7 @@
-dt::after {
+.record-date::before {
     content: '●';
     font-size: 22px;
     color: #6595cb;
     position: relative;
-    left: 9px;
+    left: -19px;
 }

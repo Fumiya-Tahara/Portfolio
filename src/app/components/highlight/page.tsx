@@ -18,8 +18,8 @@ export default function Highlight() {
         </div>
         <div className="flex justify-center">
           <div className="w-2/3 bg-white rounded-lg flex justify-center py-10">
-            <div className="w-2/3">
-              <dl className="flex flex-col">
+            <div className="w-4/5">
+              <div className="flex flex-col">
                 <Record
                   date="2021年3月"
                   title="Hello World!"
@@ -35,7 +35,22 @@ export default function Highlight() {
                   title="北九州ハッカソンに参加"
                   description="運営、開発ともに参加して開発チームでは優秀賞を受賞した。"
                 />
-              </dl>
+                <Record
+                  date="2023年10月"
+                  title="技育CAMPのマンスリーハッカソンに参加"
+                  description="約１ヶ月の準備で臨んだ。楽しかった。"
+                />
+                <Record
+                  date="2023年10月"
+                  title="JPHACKSに参加"
+                  description="サントリースポンサー賞を受賞した。"
+                />
+                <Record
+                  date="2023年10月"
+                  title="未踏福岡第3期Solve採択"
+                  description="UECS対応の農業機器制御ソフトウェアのノーコード開発アプリ"
+                />
+              </div>
             </div>
           </div>
         </div>
