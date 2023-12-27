@@ -28,7 +28,7 @@ export default function Highlight() {
                 <Record
                   date="2022年4月"
                   title="初のハッカソンに参加"
-                  description="技育CAMPのはじめてのハッカソンに参加したが何も貢献できなかった。"
+                  description="ほとんど何も貢献できなかったがチームメイトに支えられ、なんとか完走できた。"
                 />
                 <Record
                   date="2023年8月"
@@ -38,7 +38,7 @@ export default function Highlight() {
                 <Record
                   date="2023年10月"
                   title="技育CAMPのマンスリーハッカソンに参加"
-                  description="約１ヶ月の準備で臨んだ。楽しかった。"
+                  description="約１ヶ月の準備で臨んだ。受賞はできなかったが楽しかった。"
                 />
                 <Record
                   date="2023年10月"
@@ -48,7 +48,7 @@ export default function Highlight() {
                 <Record
                   date="2023年10月"
                   title="未踏福岡第3期Solve採択"
-                  description="UECS対応の農業機器制御ソフトウェアのノーコード開発アプリ"
+                  description="UECS対応の農業機器制御ソフトウェアのノーコード開発アプリの開発。"
                 />
               </div>
             </div>
@@ -56,5 +56,5 @@ export default function Highlight() {
         </div>
       </motion.div>
     </div>
-  )
+  );
 }
