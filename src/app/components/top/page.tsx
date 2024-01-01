@@ -1,19 +1,8 @@
 "use client";
 import Image from "next/image";
 import anime from "animejs/lib/anime.es.js";
-import { useEffect } from "react";
 
 export default function Top() {
-  useEffect(() => {
-    anime({
-      targets: ".barbell-img",
-      translateY: -120,
-      loop: 5,
-      direction: "alternate",
-      easing: "easeInOutSine",
-    });
-  }, []);
-
   const chocoShake = () => {
     anime
       .timeline({
@@ -93,46 +82,75 @@ export default function Top() {
   };
 
   return (
-    <div
-      className="screen h-screen grid grid-cols-12 gap-4 text-slate-200"
-      style={{ backgroundColor: "#7e4736" }}
-    >
-      {/* <div className="barbell-img col-start-2 col-span-4 flex justify-center mt-96">
-        <Image src="/icon/barbell.svg" alt="barbell" width={500} height={500} />
-      </div> */}
-      <div className="col-span-8 col-start-3 text-center text-6xl">
-        {"fmt's protein shake"}
-      </div>
-      <div className="col-span-6 col-start-4 flex">
-        <div className="choco_shaker flex justify-center" onClick={chocoShake}>
-          <Image
-            src="/icon/choco_shaker.svg"
-            alt="choco_shaker"
-            width={500}
-            height={500}
-          />
-        </div>
+    <div>
+      <header className="text-gray-600 body-font h-20">
         <div
-          className="matcha_shaker flex justify-center"
-          onClick={matchaShake}
+          className="w-full"
+          style={{
+            position: "fixed",
+            backgroundColor: "rgba(255,255,255,0.9)",
+            zIndex: 1,
+          }}
         >
-          <Image
-            src="/icon/matcha_shaker.svg"
-            alt="matcha_shaker"
-            width={500}
-            height={500}
-          />
+          <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
+            <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+              <Image
+                src="/icon/barbell.svg"
+                alt="barbell"
+                width={40}
+                height={40}
+              />
+              <span className="ml-3 text-xl">{"fmt's Portfolio"}</span>
+            </a>
+            <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
+              <a className="mr-5 hover:text-gray-900">Profile</a>
+              <a className="mr-5 hover:text-gray-900">Skills</a>
+              <a className="mr-5 hover:text-gray-900">Highlight</a>
+            </nav>
+          </div>
         </div>
-        <div
-          className="vanilla_shaker flex justify-center"
-          onClick={vanillaShake}
-        >
-          <Image
-            src="/icon/vanilla_shaker.svg"
-            alt="vanilla_shaker"
-            width={500}
-            height={500}
-          />
+      </header>
+      <div
+        className="screen grid grid-cols-12 gap-4 text-slate-200"
+        style={{ backgroundColor: "#7e4736", height: "calc(100vh - 80px)" }}
+      >
+        <div className="col-span-8 col-start-3 text-center text-6xl">
+          {"fmt's protein shake"}
+        </div>
+        <div className="col-span-6 col-start-4 flex">
+          <div
+            className="choco_shaker flex justify-center"
+            onClick={chocoShake}
+          >
+            <Image
+              src="/icon/choco_shaker.svg"
+              alt="choco_shaker"
+              width={500}
+              height={500}
+            />
+          </div>
+          <div
+            className="matcha_shaker flex justify-center"
+            onClick={matchaShake}
+          >
+            <Image
+              src="/icon/matcha_shaker.svg"
+              alt="matcha_shaker"
+              width={500}
+              height={500}
+            />
+          </div>
+          <div
+            className="vanilla_shaker flex justify-center"
+            onClick={vanillaShake}
+          >
+            <Image
+              src="/icon/vanilla_shaker.svg"
+              alt="vanilla_shaker"
+              width={500}
+              height={500}
+            />
+          </div>
         </div>
       </div>
     </div>
