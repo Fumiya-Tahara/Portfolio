@@ -103,9 +103,24 @@ export default function Top() {
               <span className="ml-3 text-xl">{"fmt's Portfolio"}</span>
             </a>
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-              <a className="mr-5 hover:text-gray-900">Profile</a>
-              <a className="mr-5 hover:text-gray-900">Skills</a>
-              <a className="mr-5 hover:text-gray-900">Highlight</a>
+              <a
+                href="#profile"
+                className="mr-5 hover:text-gray-900 cursor-pointer"
+              >
+                Profile
+              </a>
+              <a
+                href="#skills"
+                className="mr-5 hover:text-gray-900 cursor-pointer"
+              >
+                Skills
+              </a>
+              <a
+                href="#highlight"
+                className="mr-5 hover:text-gray-900 cursor-pointer"
+              >
+                Highlight
+              </a>
             </nav>
           </div>
         </div>
@@ -114,42 +129,39 @@ export default function Top() {
         className="screen grid grid-cols-12 gap-4 text-slate-200"
         style={{ backgroundColor: "#7e4736", height: "calc(100vh - 80px)" }}
       >
-        <div className="col-span-8 col-start-3 text-center text-6xl">
-          {"fmt's protein shake"}
+        <div className="col-span-8 col-start-3 text-center text-6xl flex justify-center items-end">
+          <div>{"Shake the protein!"}</div>
         </div>
         <div className="col-span-6 col-start-4 flex">
-          <div
-            className="choco_shaker flex justify-center"
-            onClick={chocoShake}
-          >
-            <Image
-              src="/icon/choco_shaker.svg"
-              alt="choco_shaker"
-              width={500}
-              height={500}
-            />
+          <div className="choco_shaker flex items-center">
+            <div className="cursor-pointer" onClick={chocoShake}>
+              <Image
+                src="/icon/choco_shaker.svg"
+                alt="choco_shaker"
+                width={500}
+                height={500}
+              />
+            </div>
           </div>
-          <div
-            className="matcha_shaker flex justify-center"
-            onClick={matchaShake}
-          >
-            <Image
-              src="/icon/matcha_shaker.svg"
-              alt="matcha_shaker"
-              width={500}
-              height={500}
-            />
+          <div className="matcha_shaker flex items-center">
+            <div className="cursor-pointer" onClick={matchaShake}>
+              <Image
+                src="/icon/matcha_shaker.svg"
+                alt="matcha_shaker"
+                width={500}
+                height={500}
+              />
+            </div>
           </div>
-          <div
-            className="vanilla_shaker flex justify-center"
-            onClick={vanillaShake}
-          >
-            <Image
-              src="/icon/vanilla_shaker.svg"
-              alt="vanilla_shaker"
-              width={500}
-              height={500}
-            />
+          <div className="vanilla_shaker flex items-center">
+            <div className="cursor-pointer" onClick={vanillaShake}>
+              <Image
+                src="/icon/vanilla_shaker.svg"
+                alt="vanilla_shaker"
+                width={500}
+                height={500}
+              />
+            </div>
           </div>
         </div>
       </div>
