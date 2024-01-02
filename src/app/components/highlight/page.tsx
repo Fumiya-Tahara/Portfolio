@@ -6,7 +6,7 @@ import { pageVariants } from "@/app/features/animation_config";
 
 export default function Highlight() {
   return (
-    <div className="bg-gray-300 py-12 lg:py-24 min-h-screen">
+    <div id="highlight" className="bg-gray-300 py-12 lg:py-24 min-h-screen">
       <motion.div
         initial="offscreen"
         whileInView="onscreen"
