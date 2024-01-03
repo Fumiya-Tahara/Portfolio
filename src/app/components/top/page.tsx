@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import anime from "animejs/lib/anime.es.js";
+import { Link as Scroll } from "react-scroll";
 
 export default function Top() {
   const chocoShake = () => {
@@ -82,7 +83,7 @@ export default function Top() {
   };
 
   return (
-    <div>
+    <div id="top">
       <header className="text-gray-600 body-font h-20">
         <div
           className="w-full"
@@ -93,7 +94,12 @@ export default function Top() {
           }}
         >
           <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+            <Scroll
+              className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer"
+              to="top"
+              smooth={true}
+              duration={600}
+            >
               <Image
                 src="/icon/barbell.svg"
                 alt="barbell"
@@ -101,26 +107,32 @@ export default function Top() {
                 height={40}
               />
               <span className="ml-3 text-xl">{"fmt's Portfolio"}</span>
-            </a>
+            </Scroll>
             <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-              <a
-                href="#profile"
+              <Scroll
                 className="mr-5 hover:text-gray-900 cursor-pointer"
+                to="profile"
+                smooth={true}
+                duration={600}
               >
                 Profile
-              </a>
-              <a
-                href="#skills"
+              </Scroll>
+              <Scroll
                 className="mr-5 hover:text-gray-900 cursor-pointer"
+                to="skills"
+                smooth={true}
+                duration={600}
               >
                 Skills
-              </a>
-              <a
-                href="#highlight"
+              </Scroll>
+              <Scroll
                 className="mr-5 hover:text-gray-900 cursor-pointer"
+                to="highlight"
+                smooth={true}
+                duration={600}
               >
                 Highlight
-              </a>
+              </Scroll>
             </nav>
           </div>
         </div>
