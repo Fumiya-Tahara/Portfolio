@@ -1,7 +1,7 @@
 "use client";
 import Image from "next/image";
 import anime from "animejs/lib/anime.es.js";
-import { Link as Scroll } from "react-scroll";
+import Header from "./components/header";
 
 export default function Top() {
   const chocoShake = () => {
@@ -83,68 +83,17 @@ export default function Top() {
   };
 
   return (
-    <div id="top">
-      <header className="text-gray-600 body-font h-20">
-        <div
-          className="w-full"
-          style={{
-            position: "fixed",
-            backgroundColor: "rgba(255,255,255,0.9)",
-            zIndex: 1,
-          }}
-        >
-          <div className="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
-            <Scroll
-              className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0 cursor-pointer"
-              to="top"
-              smooth={true}
-              duration={600}
-            >
-              <Image
-                src="/icon/barbell.svg"
-                alt="barbell"
-                width={40}
-                height={40}
-              />
-              <span className="ml-3 text-xl">{"fmt's Portfolio"}</span>
-            </Scroll>
-            <nav className="md:ml-auto flex flex-wrap items-center text-base justify-center">
-              <Scroll
-                className="mr-5 hover:text-gray-900 cursor-pointer"
-                to="profile"
-                smooth={true}
-                duration={600}
-              >
-                Profile
-              </Scroll>
-              <Scroll
-                className="mr-5 hover:text-gray-900 cursor-pointer"
-                to="skills"
-                smooth={true}
-                duration={600}
-              >
-                Skills
-              </Scroll>
-              <Scroll
-                className="mr-5 hover:text-gray-900 cursor-pointer"
-                to="highlight"
-                smooth={true}
-                duration={600}
-              >
-                Highlight
-              </Scroll>
-            </nav>
-          </div>
-        </div>
-      </header>
+    <>
+      <Header />
       <div
+        id="top"
         className="screen grid grid-cols-12 gap-4 text-slate-200"
         style={{ backgroundColor: "#7e4736", height: "calc(100vh - 80px)" }}
       >
-        <div className="col-span-8 col-start-3 text-center text-6xl flex justify-center items-end">
+        <div className="col-span-12 md:col-span-10 md:col-start-2 text-4xl md:text-6xl text-center flex justify-center items-end">
           <div>{"Shake the protein!"}</div>
         </div>
-        <div className="col-span-6 col-start-4 flex">
+        <div className="col-span-10 md:col-span-6 col-start-2 md:col-start-4 flex">
           <div className="choco_shaker flex items-center">
             <div className="cursor-pointer" onClick={chocoShake}>
               <Image
@@ -177,6 +126,6 @@ export default function Top() {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }

@@ -1,14 +1,12 @@
 import { Link as Scroll } from "react-scroll";
 import Image from "next/image";
-import { push as Menu } from "react-burger-menu";
+import { slide as Menu } from "react-burger-menu";
 
 const bugerStyle = {
   bmBurgerButton: {
-    position: "absolute",
+    position: "relative",
     width: "36px",
     height: "30px",
-    top: "25px",
-    right: "20px",
   },
   bmBurgerBars: {
     background: "#373a47",
@@ -17,6 +15,7 @@ const bugerStyle = {
     background: "#a90000",
   },
   bmCrossButton: {
+    color: "rgb(17 24 39)",
     height: "30px",
     width: "30px",
   },
@@ -25,10 +24,12 @@ const bugerStyle = {
   },
   bmMenuWrap: {
     position: "fixed",
-    height: "100%",
+    top: "80px",
+    zIndex: "1",
+    height: "calc(100vh - 80px)",
   },
   bmMenu: {
-    background: "#373a47",
+    background: "rgba(255,255,255)",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
   },
@@ -36,25 +37,25 @@ const bugerStyle = {
     fill: "#373a47",
   },
   bmItemList: {
-    color: "#b8b7ad",
+    color: "rgb(17 24 39)",
     padding: "0.8em",
   },
   bmItem: {
     display: "inline-block",
   },
   bmOverlay: {
-    background: "rgba(0, 0, 0, 0.3)",
+    display: "none",
   },
 };
 
 export default function Header() {
   return (
-    <header className="text-gray-600 h-20 relative">
+    <header className="w-full h-20">
       <div
         className="w-full"
         style={{
           position: "fixed",
-          backgroundColor: "rgba(255,255,255,0.9)",
+          backgroundColor: "rgba(255,255,255)",
           zIndex: 1,
         }}
       >
@@ -100,11 +101,12 @@ export default function Header() {
                 Highlight
               </Scroll>
             </div>
-            <div className="md:hidden">
+            <div className="md:hidden text-gray-900">
               <Menu
                 right
                 width={"50%"}
                 styles={bugerStyle}
+                pageWrapId={"page-wrap"}
                 outerContainerId={"outer-container"}
               >
                 <Scroll
