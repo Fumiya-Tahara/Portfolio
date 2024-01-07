@@ -29,7 +29,7 @@ const bugerStyle = {
     height: "100vh",
   },
   bmMenu: {
-    background: "rgba(50,50,50)",
+    background: "rgba(40,40,40,0.9)",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
   },
@@ -38,10 +38,14 @@ const bugerStyle = {
   },
   bmItemList: {
     color: "#bdc3c7",
-    padding: "0.8em",
+    padding: "1em",
   },
   bmItem: {
-    display: "inline-block",
+    display: "block",
+    padding: "1em",
+  },
+  bmItemHover: {
+    color: "red",
   },
   bmOverlay: {
     display: "none",
@@ -110,7 +114,7 @@ export default function Header() {
                 outerContainerId={"outer-container"}
               >
                 <Scroll
-                  className="mr-5 hover:text-gray-900 cursor-pointer"
+                  className="hover:text-gray-50 cursor-pointer"
                   to="profile"
                   smooth={true}
                   duration={600}
@@ -118,7 +122,7 @@ export default function Header() {
                   Profile
                 </Scroll>
                 <Scroll
-                  className="mr-5 hover:text-gray-900 cursor-pointer"
+                  className="hover:text-gray-50 cursor-pointer"
                   to="skills"
                   smooth={true}
                   duration={600}
@@ -126,7 +130,7 @@ export default function Header() {
                   Skills
                 </Scroll>
                 <Scroll
-                  className="mr-5 hover:text-gray-900 cursor-pointer "
+                  className="hover:text-gray-50 cursor-pointer "
                   to="highlight"
                   smooth={true}
                   duration={600}
