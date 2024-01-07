@@ -24,12 +24,12 @@ const bugerStyle = {
   },
   bmMenuWrap: {
     position: "fixed",
-    top: "80px",
-    zIndex: "1",
-    height: "calc(100vh - 80px)",
+    top: "0",
+    zIndex: "1000",
+    height: "100vh",
   },
   bmMenu: {
-    background: "rgba(255,255,255)",
+    background: "rgba(50,50,50)",
     padding: "2.5em 1.5em 0",
     fontSize: "1.15em",
   },
@@ -37,7 +37,7 @@ const bugerStyle = {
     fill: "#373a47",
   },
   bmItemList: {
-    color: "rgb(17 24 39)",
+    color: "#bdc3c7",
     padding: "0.8em",
   },
   bmItem: {
