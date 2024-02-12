@@ -14,9 +14,11 @@ import Image from "next/image";
 
 export default function Header() {
   return (
-    <Box sx={{ flexGrow: 1 }}>
+    <Box position="static" sx={{ flexGrow: 1 }}>
       <ThemeProvider theme={headerTheme}>
-        <AppBar position="static">
+        <AppBar
+          sx={{ height: "64px", display: "flex", justifyContent: "center" }}
+        >
           <Toolbar>
             <Typography variant="h6" component="div" sx={{ flexGrow: 1 }}>
               <Scroll
