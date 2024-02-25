@@ -3,6 +3,9 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { pageVariants } from "@/app/features/animation_config";
 
+const bio =
+  "福岡県出身の学生エンジニア。大学では農学を学んでいる。プログラミングは大学入学の少し前に始めた。主にWeb開発に興味があり、現在はGoやTypeScriptを学んでいる。";
+
 export default function Profile() {
   return (
     <div id="profile" className="bg-gray-300 py-12 lg:py-24 min-h-screen">
@@ -35,9 +38,7 @@ export default function Profile() {
                 </a>
               </div>
               <div className="mt-4 text-center lg:text-right lg:w-2/3 lg:ml-6">
-                <p>
-                  福岡県出身の学生エンジニア。大学では農学を学んでいる。プログラミングは大学入学の少し前に始めた。主にWeb開発に興味があり、現在はGoやTypeScriptを学んでいる。
-                </p>
+                <p>{bio}</p>
               </div>
             </div>
           </div>
